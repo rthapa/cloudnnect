@@ -1,0 +1,200 @@
+.clearfix{
+	clear:both;
+}
+.feedWrapper{
+	width:960px;
+	margin:60px auto 0 auto;
+	min-height: 800px;
+	background-color: #f1f1f1;
+	position:relative;
+}
+
+/************************/
+.leftbarContent{
+float:left;
+width: 200px;
+background-color: #f1f1f1;
+height: 800px;
+}
+.accountHeading{
+	margin:20px 7px 0px 7px;
+	border-bottom: 1px solid #E8E1E1;
+	color:grey;
+}
+.accountHeading span{
+	margin-left:11px;
+}
+.group-prefix{
+	padding-top:10px;
+}
+.loggedUserDetail{
+	margin:0px 7px 7px 7px;
+	clear:both;
+	font-weight: bold;
+	font-size:12px;
+}
+.loggedUserDetail li{
+	text-decoration: none;
+	list-style-type: none;
+}
+.loggedUserDetail a{
+	position: relative;
+	margin: 0px 0 0 46px;
+	line-height: 30px;
+}
+.loggedUserDetail img{
+	position:absolute;
+	left:-39px;
+}
+/******************/
+.feedContent{
+width: 497px;
+border-right: 1px solid #E8E1E1;
+border-left: 1px solid #E8E1E1;
+background-color: #f1f1f1;
+min-height:800px;
+float:left;
+padding-top:40px;
+}
+.rightbarContent{
+border-right: 1px solid #E8E1E1;
+background-color: #f1f1f1;
+
+min-height: 800px;
+width: 260px;
+float:right;
+}
+/***********search*********/
+.searchWrapper{
+	width:960px;
+	margin:60px auto 0 auto;
+	background-color: #f1f1f1;
+	min-height:800px;
+}
+.messageWrapper{
+}
+.searchContent{
+width: 698px;
+border-right: 1px solid #E8E1E1;
+background-color: #f1f1f1;
+min-height:800px;
+float:left;
+}
+.searchContentTop{
+	border-bottom: 1px solid #E8E1E1;
+	margin-bottom: 30px;
+	padding:15px;
+}
+.searchContentTop h5{
+	color: grey;
+	text-align: center;
+}
+
+/***** notification ****/
+.notificationWrapper{
+	width:960px;
+	min-height: 800px;
+	margin:0px auto 0 auto;
+	background-color: #f1f1f1;	
+}
+
+#pageMiddle{
+	width:960px;
+	 margin: 60px auto 0 auto;
+	}
+.notify-para{
+	border-bottom:1px solid #ccc;
+	 padding: 10px; 
+	 margin-top:10px;}
+div#notesBox{
+	float:left;
+	 width:400px;
+	   padding:10px;
+	border-right: 1px solid #E8E1E1;
+}
+div#groupReqBox{
+	float:left;
+	width: 217px;
+	padding: 10px;
+}
+div#groupRequests{
+	border-bottom:#CCC 1px solid; 
+	padding: 0 0 8px 0;
+}
+div#groupRequests h3, #groupReqBox h3{
+	color:grey;
+	font-size: 13px;
+}
+div#groupRequests p{
+	font-size: 13px;
+}
+div#friendReqBox{
+	float:right; 
+	width:280px; 
+	padding:10px; 
+	border-left: 1px solid #E8E1E1;
+}
+div#friendReqBox h3{
+	color:grey;
+	font-size: 13px;
+}
+#pageMiddle h5{
+	color: grey; 
+	border-bottom: 1px solid #E8E1E1;
+	 margin: 0 0 10px 0; 
+	 padding: 0 0 10px 0;
+	}
+div.friendrequests{
+	height:74px; 
+	border-bottom:#CCC 1px solid; 
+	margin-bottom:8px; 
+}
+img.user_pic{float:left; 
+	width:68px; 
+	height:68px; 
+	margin-right:8px;
+}
+div.user_info{
+	float:left; 
+	font-size:12px;
+	padding: 3px;
+}
+
+#followAcceptBtn{
+	clear: both;
+	text-align: center;
+	padding: 4px 7px 4px 7px;
+	margin: 0px 0 0 0px;
+	background-color:#c0392b ;
+	color:white;
+	border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+    outline: none;
+}
+#followAcceptBtn:hover:enabled{background-color: #C94D40;cursor: pointer;}
+#followAcceptBtn:active:enabled{
+background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,0));
+outline: none;
+}
+/**** explore *****/
+
+.exploreWrapper{
+	width:960px;
+	margin:60px auto 0 auto;
+	min-height: 800px;
+	background-color: #f1f1f1;
+	position:relative;
+}
+.explore-main{
+	width:698px;
+	float:left;
+	border-right: 1px solid #E8E1E1;
+	min-height: 800px;
+}
+.popular-div{
+margin:20px 0 0 20px;
+}
+.popular-div h5{
+border-bottom: 1px solid #E8E1E1;
+}
+

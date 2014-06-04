@@ -1,0 +1,39 @@
+<?php
+include_once("php_includes/check_login_status.php");
+	// If the page requestor is not logged in, usher them away
+if($user_ok != true || $log_username == ""){
+	header("location: http://localhost/cloudbaxa/index.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Settings</title>
+	<link rel="shortcut icon" href="Images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+	<link rel="stylesheet" type="text/css" href="user-styles.css">
+	<link rel="stylesheet" type="text/css" href="tabs_styles.css" />
+	<script src="js/main.js"></script>
+	<script src="js/ajax.js"></script>
+</head>
+	<body>
+		<?php
+		if($log_username != ''){
+		 include_once("php_includes/template_pageTop.php"); 
+		}else{
+		 include_once("php_includes/template_pageTop_notLogged.php"); 
+		}
+		?>
+
+		<div class="feedWrapper">
+			<div class="feedsWrapper">
+				
+			</div>
+			<div class="sidebarWrapper">
+
+			</div>
+		</div>
+	</body>
+</html>

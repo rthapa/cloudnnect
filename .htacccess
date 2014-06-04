@@ -1,0 +1,7 @@
+#1 -- establish a custom 404 file not found page ----
+
+ErrorDocument 404 /CloudBox/filenotfound.php
+
+#2 ---- prevent directory file isting in all of your forlders---
+
+IndexIgnore *

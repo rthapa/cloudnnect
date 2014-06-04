@@ -1,0 +1,772 @@
+/*
+* Author: Rabi Thapa
+* Description: Prototype CSS for cloudBox website.
+*/
+
+*{
+	margin:0;
+	padding:0;
+
+}
+
+body{
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: Helvetica;
+	background: #e1e1e1;
+
+
+}
+
+a{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	color: grey;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+/********************************Navigation-section********************/
+
+.navigation-wrapper{
+	height: 60px;
+	background: url(Images/darkbg.png);
+	text-align: center;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
+	font-size: 15px;
+	position: fixed;
+	z-index: 100000;
+	width: 100%;
+	top:0;
+}
+.non-fixed{
+	position:static;
+}
+
+.navigation{
+	width: 960px;
+	height: 50px;
+	margin: 0 auto 0 auto;
+}
+
+.logo{
+	float: left;
+	margin-top: 10px;
+}
+/******************* search bars *****************/
+#search {
+	float:left;
+
+}
+
+#search input[type="text"] {
+	margin: 15px 0 0 320px;
+    background: url(Images/search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #777;
+    width: 90px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+	margin: 15px 0 0 150px;
+    width: 360px;
+    outline:none;
+    background: url(Images/search-dark.png) no-repeat 10px 6px #e5e5e5;
+    }
+/**** home page search bar **/
+.searchHomepage {
+	float:left;
+	
+}
+
+.searchHomepage input[type="text"] {
+	margin: 15px 0 0 350px;
+    background: url(Images/search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #777;
+    width: 90px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    }
+
+.searchHomepage input[type="text"]:focus {
+    margin: 15px 0 0 200px;
+    width: 410px;
+    outline:none;
+    background: url(Images/search-dark.png) no-repeat 10px 6px #e5e5e5;
+    }
+/******************************************/
+.nav-right{
+	float:right;
+	padding: 15px 25px 0 0;
+	color: grey;
+}
+
+.cl-effect-1 h1 {
+	border: none;
+	padding: 5px;
+	background: #c0392b;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.cl-effect-1 h1:hover {
+	background: #A5281B;
+}
+
+
+
+/******************************************register-form******************/
+#unamestatus{
+font-size:13px;
+display:none;
+background-color:grey;
+border: 1px solid #fff;
+padding:2px;
+background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0, #ffffff),color-stop(1, #dbdbdb));
+filter: progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ffffff', EndColorStr='#dbdbdb');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+    (startColorStr='#ffffff', EndColorStr='#dbdbdb')";
+-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+border-radius: 2px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+}
+#status{
+	border: none;
+	border-radius: 5px;
+	display:none;
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+	background: #c0392b;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 15px;
+	margin: 0 0 0 260px;
+}
+
+.af-wrapper {
+	width: 780px;
+	margin: 100px auto 30px auto;
+	background: #fff;
+
+	position: relative;
+	/*box-shadow: 1px 2px 4px rgba(0,0,0,0.2);*/
+	box-shadow: -8px 8px 4px -2px rgba(0,0,0,0.6);
+}
+.af-wrapper h3 {
+	padding:20px 30px 20px 30px;
+	background-color:#444;
+	color: white;
+	text-align: center;
+}
+
+	
+
+
+.af-form {
+	padding: 10px 0px;
+}
+.af-form:before,
+.af-form:after {
+    content:"";
+    display:table;
+}
+.af-form:after {
+    clear:both;
+}
+
+.af-inner {
+	padding: 15px 20px 15px 20px;
+}
+
+.af-form label {
+	display: block;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;	
+	-moz-box-orient: horizontal;
+	-moz-box-pack: end;
+	-moz-box-align: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: end;
+	-webkit-box-align: center;
+	box-orient: horizontal;
+	box-pack: end;
+	box-align: center;
+	height: 40px;
+	float: left;
+	padding-right: 3%;
+	width: 30%;
+	min-width: 80px;
+	font-size: 13px;
+	color: #888;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: right;
+
+}
+.gender-select{
+   width: 322px;
+   height: 34px;
+   overflow: hidden;
+   color: #888;
+   font-weight: bold;
+   appearance:none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   background: url(Images/downArrowSelect.jpg) no-repeat right #ffffff;
+   background: url(Images/downArrowSelect.jpg) no-repeat right -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 7%, #f7f7f7 22%, #ffffff 100%);
+   background: url(Images/downArrowSelect.jpg) no-repeat right -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#f7f7f7), color-stop(22%,#f7f7f7), color-stop(100%,#ffffff));
+   background: url(Images/downArrowSelect.jpg) no-repeat right -webkit-linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+   background: url(Images/downArrowSelect.jpg) no-repeat right -o-linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+   background: url(Images/downArrowSelect.jpg) no-repeat right -ms-linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+   background: url(Images/downArrowSelect.jpg) no-repeat right linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+   box-shadow: 0px 1px 1px rgba(255,255,255,0.7), 1px 1px 2px rgba(0,0,0,0.1) inset;
+   text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+   border: 1px solid #ccc;
+}
+
+.af-form input[type=text],
+.af-form input[type=password],
+.af-form input[type=email],
+.af-form input[type=date] {
+	border: 1px solid #ddd;
+	padding: 10px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+	color: #666;
+	width: 300px;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f7f7f7 7%, #f7f7f7 22%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#f7f7f7), color-stop(22%,#f7f7f7), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+	background: linear-gradient(top, #ffffff 0%,#f7f7f7 7%,#f7f7f7 22%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.7), 1px 1px 2px rgba(0,0,0,0.1) inset;
+}
+.af-form input:focus {
+	background: #f9fcef;
+	outline: none;
+}
+.reg-button-div{
+	width: 200px;
+    margin: 20px auto 20px auto;
+}
+.saveDiv{
+	margin:20px 0 20px 320px;
+}
+.reg-button-div input[type="submit"]{
+  display: inline-block;
+  width: 200px;
+  padding: 8px 15px;
+  background: #c0392b; /*#444444*/
+  color: #fff;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  /* Font styles */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.reg-button-div input[type="submit"]:hover  { background: #A5281B; cursor: pointer; }
+
+
+/******************************************Banner-section******************/
+
+.banner {
+	width: 100%;
+	height: 370px;
+	margin: 20px auto 2px auto;
+	
+}
+
+.banner-img{
+	float:left;
+	width: 600px;
+}
+
+/**********************************************form login*********************/
+
+/********************************  form login - END ********************************/
+ 
+ .separator{
+	height: 20px;
+	width:960px;
+	margin: 0 auto 0 auto;
+	clear:both;
+ }
+
+hr { margin-bottom: 50px; border: 0; } /* For all HR tag */
+ 
+hr.separator-bevel {
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #f4f4f4;
+	clear:both;
+}
+
+
+hr.image {
+    background: url(Images/sep-pattern.png) repeat-x;
+    height: 8px;
+}
+
+.offerBanner{
+	height: 200px;
+	width: 960px;
+	margin: 2px auto 2px auto;
+	padding: 2px 0 2px 0;
+	font-size: 80%;
+	color: #505050;
+	clear:both;
+}
+
+.cloud-promo{
+	padding-left: 5px;
+	float:left;
+	width: 200px;
+	margin-left: 30px;
+	
+}
+
+/***********************************  Footer-section  **************************/
+.footer2{
+	width:520px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+	margin-bottom: 20px;
+	
+}
+.footer2 a{
+	padding: 0 5px 0 5px;
+	font-size: 13px;
+}
+
+
+.footer-bg{
+	font-size: 15px;
+	margin-top: 2px;
+	width:100%;
+	height: 90px;
+	background: url(Images/darkbg.png);
+}
+
+.footer-content-wrapper{
+	margin: 0 auto 0 auto;
+	width: 960px;
+	font-size: 80%;
+	color: grey;
+	padding: 10px 0 0 0;
+}
+
+.footer-content-wrapper h3{
+	padding-bottom: 5px;
+}
+
+.footer-content-wrapper h4{
+	padding-bottom: 5px;
+}
+
+.footer-contact{
+	padding-left: 30px;
+	padding-right: 35px;
+	float:left;
+	border-right: 1px solid #505050;
+	width: 200px;
+}
+
+.footer-support{
+	padding-left: 40px;
+	float: left;	
+	width: 110px;
+	border-right: 1px solid #505050;
+}
+
+.footer-cloudbox{
+	padding-left: 40px;
+	float: left;	
+	width: 110px;
+	border-right: 1px solid #505050;
+}
+
+.footer-mdx{
+	float:left;
+	padding: 20px 15px 15px 30px;
+}
+
+.footer-copyright{
+	float:left;
+	width: 200px;
+	/*line-height: 1.4;*/
+	padding: 0px 0 0 0;
+}
+
+/***************test************/
+#overlay {
+	display: none;
+	z-index: 2;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	color: #FFF;
+}
+#specialBox {
+	display: none;
+	position: absolute;
+	left: 32%;
+	top:20%;	
+	z-index: 3;
+	margin: 0 auto 0 auto;
+	width: 560px; 
+	background: #FFF;
+	color: #000;
+}
+
+/************** login new ************/
+/* Demo 5 */
+.login-status{
+	width:290px;
+	height: 40px;
+	border: none;
+	padding: 5px;
+	background: #c0392b;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.login-new{
+	background: url('Images/bgNoTree.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 600px;
+
+}
+.bannerLogo{
+	margin:0px auto 0px auto;
+	width: 180px;
+}
+.form-login {
+    /* Size and position */
+    width: 300px;
+    
+    margin: 0px auto 0px;
+    padding: 0px 0 0 0; 
+    position: relative;
+    
+    /* Styles */
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 0 5px rgba(0,0,0,0.1), 0 3px 2px rgba(0,0,0,0.1);*/
+ 
+}
+
+.form-login p {
+    width: 100%;
+    margin-top: 0px;
+    
+    /*border-radius: 5px 5px 5px 5px;*/
+    
+}
+
+.form-login input[type=text],
+.form-login input[type=password] {
+    /* Size and position */
+    width: 100%;
+    height: 35px;
+    padding: 0 0px;
+
+    /* Styles */
+    border: none; /* Remove the default border */
+    background: white; /* Fallback */
+    background: rgba(255,255,255,0.2);
+    box-shadow: 
+        inset 0 0 10px rgba(255,255,255,0.5);
+
+    /* Font styles */
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 10px;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    font-size: 15px;       
+}
+
+.form-login input[type=text] {
+    border-bottom: 1px solid #fff; /* Fallback */
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-radius: 0px 5px 0 0;
+}
+
+.form-login input[type=password] {
+    border-top: 1px solid #CCC; /* Fallback */
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0 0 0 5px;
+}
+
+.form-login input[type=text]:hover,
+.form-login input[type=password]:hover,
+.form-login input[type=text]:focus,
+.form-login input[type=password]:focus {
+    background: #f7def7; /* Fallback */
+    background: rgba(255,255,255,0.4);
+    outline: none;
+}
+
+.form-login h4{
+	padding-top: 2px;
+	color: grey;
+	font-size: 13px;
+	font-style: italic;
+	
+	text-align: right;
+}
+
+.form-login a:hover{
+	text-decoration: none;
+
+}
+/* Placeholder style (from http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css) */
+
+.form-login input::-webkit-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form-login input:-moz-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form-login input:-ms-input-placeholder {
+    color: #fff;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-family: 'Handlee', cursive;
+}
+
+.form-login button {
+    /* Size and position */
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    /* Styles */
+    background: #8D9CF2;
+    background: url(Images/noise.png), -moz-radial-gradient(center, ellipse cover, #8D9CF2 0%, #8D9CF2 100%);
+    background: url(Images/noise.png), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8D9CF2), color-stop(100%,#8D9CF2));
+    background: url(Images/noise.png), -webkit-radial-gradient(center, ellipse cover, #8D9CF2 0%,#8D9CF2 100%);
+    background: url(Images/noise.png), -o-radial-gradient(center, ellipse cover, #8D9CF2 0%,#8D9CF2 100%);
+    background: url(Images/noise.png), -ms-radial-gradient(center, ellipse cover, #8D9CF2 0%,#8D9CF2 100%);
+    background: url(Images/noise.png), radial-gradient(ellipse at center, #8D9CF2 0%,#8D9CF2 100%);
+
+    border-radius: 0px 5px 0px 5px;
+    border: none;  
+    cursor: pointer;  
+}
+
+.form-login button i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -60px;
+  
+    color: #8d1645;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.form-login button span {
+    display: block;
+
+    /* Font styles */ 
+    color: #e1e2de;
+    font-weight: bold;
+    font-size: 20px;
+    
+
+    /*
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    */
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Focus and hover on button */
+
+.form-login button:focus {
+    outline: none;
+}
+
+.form-login button:hover span,
+.form-login button:focus span {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+
+.form-login button:hover i,
+.form-login button:focus i {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    left: 0;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+/* Click on button */
+
+.form-login button:active span,
+.form-login button:active i {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; 
+}
+
+.form-login button:active span {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.form-login button:active i {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    left: 0;
+    color: #fff;
+}
+/********cloud separator ********/
+#clouds{
+	margin-top: 123px;
+}
+#clouds-login-fail{
+	margin-top: 63px;
+}
+#clouds-login-fail path {
+	fill: #e1e1e1;
+	stroke: #e1e1e1;
+}
+#clouds path {
+	fill: #e1e1e1;
+	stroke: #e1e1e1;
+}
+
+.container {
+	overflow: hidden;
+	/* we don't want the pseudo-elements sticking out */
+}
+
+.container svg {
+	display: block;
+}
+
+
+
+/*********what is cloudboxo******/
+.what-cloudboxo{
+	margin: 20px auto 20px auto;
+	width: 160px;
+	color: grey;
+	
+}
+.what-cloudboxo img{
+	padding-left: 40px;
+}
+
+/**** filenotfound ****/
+.fnotfWrapper{
+	color:grey;
+	width: 960px;
+	min-height: 800px;
+	margin: 60px auto 30px auto;
+	background: #fff;
+	text-align: center;
+	padding-top:50px;
+}
